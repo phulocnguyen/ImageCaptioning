@@ -1,0 +1,1 @@
+from .image_caption_datamodule import ImageCaptionDataModule

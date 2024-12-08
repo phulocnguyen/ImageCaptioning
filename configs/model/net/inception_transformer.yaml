@@ -1,0 +1,17 @@
+_target_: src.models.components.image_caption_net.ImageCaptionNet
+image_embed_net:
+  _target_: src.models.components.image_embedding.InceptionNet
+  drop_rate: 0.5
+  image_features: ${model.net.features}
+
+text_embed_net:
+  _target_: src.models.components.text_embedding.Transformer
+  num_tokens: 1741 
+  dim_model: ${model.net.features}
+  num_heads: 8
+  num_encoder_layers: 6
+  num_decoder_layers: 6
+  dropout_p: 0.1
+
+features: 256
+dataset_dir: ${model.dataset_dir}

@@ -1,0 +1,18 @@
+_target_: src.models.components.image_caption_net2.ImageCaptionNet2
+image_embed_net:
+  _target_: src.models.components.image_embedding.ResnetEncoder
+  encode_size: 14
+  embed_dim: 200
+
+text_embed_net:
+  _target_: src.models.components.text_embedding.Glove_Transformer
+  embed_dim: 200
+  drop_rate: 0.5
+  num_heads: 10
+  num_encoder_layers: 8
+  num_decoder_layers: 8
+  text_features: ${model.net.features}
+  dataset_dir: ${model.dataset_dir}
+
+features: 256
+dataset_dir: ${model.dataset_dir}
