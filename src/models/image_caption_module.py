@@ -389,7 +389,7 @@ if __name__ == "__main__":
 
     @hydra.main(version_base=None,
                 config_path=config_path,
-                config_name="image_caption.yaml")
+                config_name=".yaml")
     def main(cfg: DictConfig):
         print(cfg)
 

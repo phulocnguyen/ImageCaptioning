@@ -1,0 +1,23 @@
+[2024-12-08 23:06:20,981][src.utils.utils][INFO] - [rank: 0] Enforcing tags! <cfg.extras.enforce_tags=True>
+[2024-12-08 23:06:20,983][src.utils.utils][INFO] - [rank: 0] Printing config tree with Rich! <cfg.extras.print_config=True>
+[2024-12-08 23:06:21,012][__main__][INFO] - [rank: 0] Instantiating datamodule <src.data.ImageCaptionDataModule>
+[2024-12-08 23:06:21,524][__main__][INFO] - [rank: 0] Instantiating model <src.models.ImageCaptionModule>
+[2024-12-08 23:06:22,068][src.utils.utils][ERROR] - [rank: 0] 
+Traceback (most recent call last):
+  File "/Users/phulocnguyen/Documents/Workspace/ImageCaptioning/src/utils/utils.py", line 68, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/Users/phulocnguyen/Documents/Workspace/ImageCaptioning/src/train.py", line 61, in train
+    model: LightningModule = hydra.utils.instantiate(cfg.model)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 333, in instantiate_node
+    _target_ = _resolve_target(node.get(_Keys.TARGET), full_key)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 144, in _resolve_target
+    raise InstantiationException(msg)
+hydra.errors.InstantiationException: Expected a callable target, got '<module 'src.models.ImageCaptionModule' from '/Users/phulocnguyen/Documents/Workspace/ImageCaptioning/src/models/ImageCaptionModule.py'>' of type 'module'
+full_key: model
+[2024-12-08 23:06:22,069][src.utils.utils][INFO] - [rank: 0] Output dir: /Users/phulocnguyen/Documents/Workspace/ImageCaptioning/logs/train/runs/2024-12-08_23-06-20

@@ -7,7 +7,7 @@ defaults:
   - override /data: flickr8k
   - override /model: image_caption
   - override /callbacks: default
-  - override /trainer: gpu
+  - override /trainer: cpu
   - override /logger: wandb
 
 # all parameters below will be merged with parameters from default configurations set above
@@ -20,7 +20,7 @@ data:
   num_workers: 10
 
 trainer:
-  max_epochs: 30
+  max_epochs: 2
 
 logger:
   wandb:
