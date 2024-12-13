@@ -76,8 +76,8 @@ The models were evaluated using the following metrics:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/image-captioning.git
-   cd image-captioning
+   git clone https://github.com/phulocnguyen/ImageCaptioning.git
+   cd ImageCaptioning
    ```
 2. Install dependencies:
    ```bash
@@ -88,15 +88,14 @@ The models were evaluated using the following metrics:
    - Extract the images and captions into the `data/` directory.
 4. Train the model:
    ```bash
-   python train.py --model transformer --cnn resnet50
+    export CUDA_VISIBLE_DEVICES=???
+    export WANDB_API_KEY=???
+    python src/train.py experiment=<your_experiment>
    ```
-5. Evaluate the model:
+5. Evaluate the model
    ```bash
-   python evaluate.py --model transformer
-   ```
-6. Generate captions for new images:
-   ```bash
-   python generate_caption.py --image path/to/image.jpg
+   export CUDA_VISIBLE_DEVICES=???
+   python src/eval.py experiment=<your_experiment> ckpt_path=<your_checkpoint>
    ```
 
 ## Future Work
