@@ -63,7 +63,7 @@ The models were evaluated using the following metrics:
 ### Performance Summary
 | Model        | BLEU-1 | BLEU-2 | BLEU-3 | BLEU-4 | Train Loss | Val Loss | Test Loss | Train Accuracy | Val Accuracy | Test Accuracy |
 |--------------|--------|--------|--------|--------|------------|----------|-----------|----------------|--------------|---------------|
-| [RNN][https://wandb.ai/locnp/image-captioning/reports/Image-Captioning-Using-RNN--VmlldzoxMDU4ODAxNg?accessToken=72pahyhyuooehicttfhhj3j0ce6utaav6p15ai5jplw434a6zvjj5b8gxdg2w9a8]          | 0.60   | 0.50   | 0.40   | 0.30   | 2.1        | 2.4      | 2.6       | 70%            | 65%          | 60%           |
+| [RNN](https://wandb.ai/locnp/image-captioning/reports/Image-Captioning-Using-RNN--VmlldzoxMDU4ODAxNg?accessToken=72pahyhyuooehicttfhhj3j0ce6utaav6p15ai5jplw434a6zvjj5b8gxdg2w9a8)          | 0.60   | 0.50   | 0.40   | 0.30   | 2.1        | 2.4      | 2.6       | 70%            | 65%          | 60%           |
 | LSTM         | 0.65   | 0.55   | 0.48   | 0.40   | 1.8        | 2.0      | 2.1       | 75%            | 72%          | 70%           |
 | Transformer  | 0.80   | 0.70   | 0.65   | 0.60   | 1.3        | 1.5      | 1.6       | 85%            | 81%          | 80%           |
 
