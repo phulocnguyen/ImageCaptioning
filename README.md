@@ -65,7 +65,7 @@ The models were evaluated using the following metrics:
 |--------------|--------|--------|--------|--------|
 | [RNN](https://wandb.ai/locnp/image-captioning/reports/Image-Captioning-Using-RNN--VmlldzoxMDU4ODAxNg?accessToken=72pahyhyuooehicttfhhj3j0ce6utaav6p15ai5jplw434a6zvjj5b8gxdg2w9a8)          | 0.60   | 0.50   | 0.40   | 0.30   | 2.1        | 
 | [LSTM](https://wandb.ai/trangdo/image-captioning/reports/imageCaptioning-using-LSTM--VmlldzoxMDU4OTEwOQ?accessToken=1ba0tihsii47z5fw7opb9llw8y38qgc6tyin372zjdyqiqhkqwcmju5orxr69q8e&fbclid=IwY2xjawHJPdVleHRuA2FlbQIxMAABHQ8NfzQ2gU9ZTcjt_1rWxVbjA6Cv4rP0M8N4Tpd7GxTo1GzC5zNder5NVA_aem_aEbyCxeLX9FVp1hQkxWymA)         | 0.65   | 0.55   | 0.48   | 0.40   |
-| Transformer  | 0.80   | 0.70   | 0.65   | 0.60   |
+| [Transformer](https://wandb.ai/lamai284/image_caption/reports/Image-caption-using-Transformer--VmlldzoxMDU5NTk5OA?accessToken=tflfntaa2u0telicydcp9tb0g4cv72xihnig7f8zr8634e44eqkeywxi3je7pfc6)  | 0.80   | 0.70   | 0.65   | 0.60   |
 ## Challenges and Limitations
 1. **Resource Constraints**: Training deep models like Transformer requires significant computational resources, which were limited during this project.
 2. **Dataset Size**: The small size of the Flickr8k dataset restricted the generalization capabilities of the models.
