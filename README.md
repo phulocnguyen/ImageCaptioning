@@ -1,13 +1,5 @@
 # Image Captioning using Deep Learning
 
-# Collaborators
-1. Nguyen Phu Loc
-2. Nguyen Duy Minh Lam
-3. Nguyen Quang Huy
-4. Bui Ngoc Khanh
-5. Tran Duc Dang Khoi
-6. Do Thi Thuy Trang
-
 This repository contains the implementation of an Image Captioning system using various deep learning models, including RNN, LSTM, and Transformer architectures. The models were trained and evaluated on the Flickr8k dataset, with feature extraction performed using pretrained CNNs (ResNet50 and InceptionV3). The project aims to explore and compare the performance of different model architectures for generating accurate and meaningful captions for images.
 
 ## Table of Contents
