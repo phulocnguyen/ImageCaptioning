@@ -2,6 +2,8 @@
 
 This repository contains the implementation of an Image Captioning system using various deep learning models, including RNN, LSTM, and Transformer architectures. The models were trained and evaluated on the Flickr8k dataset, with feature extraction performed using pretrained CNNs (ResNet50 and InceptionV3). The project aims to explore and compare the performance of different model architectures for generating accurate and meaningful captions for images.
 
+![Interface](ui.png)
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Dataset](#dataset)
@@ -53,7 +55,6 @@ The models were evaluated using the following metrics:
 - **ResNet50** and **InceptionV3** both contributed effectively to feature extraction, with slight variations in the results depending on the architecture.
 
 ### Performance Summary
-*** Click RNN, LSTM, Transformer to view the performance of each model ***
 | Model        | BLEU-1 | BLEU-2 | BLEU-3 | BLEU-4 | 
 |--------------|--------|--------|--------|--------|
 | [RNN](https://wandb.ai/locnp/image-captioning/reports/Image-Captioning-Using-RNN--VmlldzoxMDU4ODAxNg?accessToken=72pahyhyuooehicttfhhj3j0ce6utaav6p15ai5jplw434a6zvjj5b8gxdg2w9a8)          | 0.55996   | 0.45026   | 0.47851   | 0.53036   | 
